@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCD Fruit Store </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    
+<!-- header  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> NCĐ-FS </a>
+
+    <nav class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="#features">Các tính năng</a>
+        <a href="#products">Các sản phẩm</a>
+        <a href="#categories">Thể loại</a>
+        <a href="#review">Nhận xét</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn1"></div>
+        <div class="fas fa-search" id="search-btn1"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn1"></div>
+        <div class="fas fa-user" id="login-btn1"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Tìm kiếm sản phẩm tại đây...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>Dưa hấu</h3>
+                <span class="price">18900 vnđ</span>
+                <span class="quantity">Số lượng : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>Hành tây tươi</h3>
+                <span class="price">18000 vnđ<span>
+                <span class="quantity">Số lượng: 2</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>Thịt lợn</h3>
+                <span class="price">60000 vnđ</span>
+                <span class="quantity">Số lượng : 1</span>
+            </div>
+        </div>
+        <div class="total"> Tổng hóa đơn: 96.900 vnđ </div>
+        <a href="#" class="btn1">Thủ tục thanh toán</a>
+    </div>
+
+    <form onsubmit="login()" action="" class="login-form">
+        <h3>Đăng nhập ngay</h3>
+        <div class="input__field">
+            <input class="box" id="username" type="text" placeholder="User Name" />
+          </div>
+          <div class="input__field">
+            <input type="email" placeholder="Email..." class="box" id="email">
+          </div>
+          <div class="input__field">
+            <input type="password" placeholder="Mật khẩu..." class="box" id = "password">
+          </div>
+          <p>Bạn đã quên mật khẩu? <a href="#"> click vào đây</a></p>
+          <p>Bạn chưa có tài khoản <a href="sign.html"> Tạo mới tài khoản</a></p>
+          <button id="btn" class = "btn1"> Đăng nhập </button>
+        
+
+</header>
+
+<!-- đóng header  -->
+
+<!-- banner -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Hoa quả tươi mát <span>100% Hữu Cơ</span> cho gia đình bạn</h3>
+        <p>Chúng tôi cam kết sản phẩm không chứa thuốc trừ cỏ, không chứa hormone, không bị biến đổi gen, không chứa phân bón hóa học, thậm chí là không chất bảo quản và cả không bị chiếu xạ tiệt trùng.</p>
+        <a href="#" class="btn1">Mua ngay bây giờ</a>
+    </div>
+
+</section>
+
+<!-- hết bannaer-->
+
+<!-- thẻ mở tính năng -->
+
+<section class="features" id="features">
+
+    <h1 class="heading">NCĐ-FS<span>Tính năng, Ưu điểm</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>Tươi và sạch</h3>
+            <p>Chứng chỉ ISO 22000 về vệ sinh anh toàn thực phẩm</p>
+            <a href="#" class="btn1">Đọc thêm</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>Miễn phí vận chuyển</h3>
+            <p>free ship trên toàn quốc nhanh chóng và thuận tiện</p>
+            <a href="#" class="btn1">Đọc thêm</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>Thanh toán dễ dàng</h3>
+            <p>Hỗ trợ tất cả các loại thẻ tín dụng điện tử, visa</p>
+            <a href="#" class="btn1">Đọc thêm</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- thẻ đóng tính năng -->
+
+<!-- thẻ mở sản phẩm   -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Danh sách<span>Các sản phẩm</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/product-1.png" alt="">
+                <h3>Cam tươi</h3>
+                <div class="price"> 10000-20000 vnđ </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn1">Thêm vào giỏ</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-2.png" alt="">
+                <h3>Hành Tây</h3>
+                <div class="price"> 5000 - 9000 vnđ </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn1">Thêm vào giỏ</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-3.png" alt="">
+                <h3>Thịt tươi</h3>
+                <div class="price">30000 - 60000 vnđ</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn1">Thêm vào giỏ</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-4.png" alt="">
+                <h3>Bắp cải tươi</h3>
+                <div class="price"> 4900 - 9900 vnđ</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn1">Thêm vào giỏ</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/product-5.png" alt="">
+                <h3>Khoai tây tươi</h3>
+                <div class="price"> 5900 - 7900 vnđ </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn1">Thêm vào giỏ</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-6.png" alt="">
+                <h3>Quả bơ tươi</h3>
+                <div class="price"> 7900 - 9900 vnđ </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn1">Thêm vào giỏ</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-7.png" alt="">
+                <h3>Cà rốt tươi</h3>
+                <div class="price"> 3900 - 12900 vnđ</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn1">Thêm vào giỏ</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-8.png" alt="">
+                <h3>Chanh tươi</h3>
+                <div class="price"> 1900 - 6900 vnđ</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn1">Thêm vào giỏ</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- thẻ đóng sản phẩm -->
+
+<!-- Thẻ mở thể loại  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> Sản phẩm <span>Thể loại</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/cat-1.png" alt="">
+            <h3>Rau</h3>
+            <p>Giảm tới 35%</p>
+            <a href="#" class="btn1">Mua ngay</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-2.png" alt="">
+            <h3>Quả</h3>
+            <p>Giảm tới 45%</p>
+            <a href="#" class="btn1">Mua ngay</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-3.png" alt="">
+            <h3>Sản phẩm từ Sữa</h3>
+            <p>Giảm tới 25%</p>
+            <a href="#" class="btn1">Mua ngay</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-4.png" alt="">
+            <h3>Thịt</h3>
+            <p>Giảm tới 45%</p>
+            <a href="#" class="btn1">Mua ngay</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Thể loại -->
+
+<!-- thẻ nhận xét  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> Nhận xét của <span>khách hàng</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>Giao hàng nhanh, rau rất tươi</p>
+                <h3>Hồng Đăng</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>Quả tươi như nụ cười của anh</p>
+                <h3>Thanh Rose</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>Không giòn...! </p>
+                <h3>Huấn hoa hòe</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>Thịt rất ngon, ngon hơn nyc</p>
+                <h3>Teacher Ông ngoại</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- đóng thẻ nhận xét -->
+
+<!-- thẻ blogs  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> NCĐ-FS <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> NCĐ-FS</a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2019 </a>
+                </div>
+                <h3>Sản phẩm từ vườn rau hữu cơ của NCĐ-FS</h3>
+                <p>Sản phẩm tươi mát và thơm ngon hoàn toàn phù hợp với giá tiền</p>
+                <a href="#" class="btn1">Đọc thêm</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> NCĐ-FS </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                </div>
+                <h3>Vườn rau tươi Hữu cơ của NCĐ-FS</h3>
+                <p>Vườn sau được sản xuất theo công nghệ hữu cơ của Nhật</p>
+                <a href="#" class="btn1">Đọc thêm</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i>NCĐ-FS</a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2022 </a>
+                </div>
+                <h3>Ngày một đa dạng, thêm nhiều sản phẩm mới</h3>
+                <p>Chúng tôi đang tiếp tục xây dựng đổi mới nhiều mô hình hữu cơ khác phù hợp với nhu cầu của khách hàng</p>
+                <a href="#" class="btn1">Đọc thêm</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- đóng blogs-->
+
+<!-- footer   -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> NCĐ-FS <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Tươi xanh, mát lành lựa chọn tin cậy của các bà nội trợ Việt</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box"> 
+            <h3>Liên hệ với chúng tôi</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> ncdfs@gamil.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> P.Xuân Khanh, Sơn Tây, Hà Nội </a>
+        </div>
+
+        <div class="box">
+            <h3>Tab nhanh</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> Trang chủ</a>
+            <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> Các tính năng </a>
+            <a href="#products" class="links"> <i class="fas fa-arrow-right"></i> Các sản phẩm </a>
+            <a href="#categories" class="links"> <i class="fas fa-arrow-right"></i> Thể loại </a>
+            <a href="#review" class="links"> <i class="fas fa-arrow-right"></i> Nhận xét </a>
+            <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>Ý kiến phản hồi vui lòng nhập vào bên dưới</h3>
+            <p>Mọi ý kiến của các bạn chúng tôi sẽ tiếp thu và đổi mới để ngày càng mang đến các sản phẩm thiết thực hơn</p>
+            <input type="email" placeholder="Nhập tại đây..." class="email">
+            <input type="submit" value="Gửi" class="btn1">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Nguyễn Công Đoàn Food store<span>  NGON, BỔ, RẺ </span> | Đã đăng kí bản quyền </div>
+
+</section>
+
+<!-- footer -->
+
+<div class="loader-container">
+    <img src="image/loading.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="/script.js"></script>
+<script src="./inout.js"></script>
+
+</body>
+</html>
